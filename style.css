@@ -1,0 +1,234 @@
+svg{
+    color: black;
+}
+span{
+    color: black;
+}
+.active{
+  background: #e7f9fd;
+  border-radius: 7px;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+:root {
+  --dot-diameter: 120px;
+  --circle-border-width: 3px;
+  --default-color: #4A96A6;
+  font-family: 'Lilita One', cursive;
+}
+#po{
+    position: absolute;
+    top: 20rem;
+    
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  gap: 24px;
+  width: 450px;
+}
+.circle-container1 {
+  width: var(--dot-diameter);
+  height: var(--dot-diameter);
+  transform: rotate(-225deg);
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+  margin-top: 20px;
+}
+
+.circle-container__background1 {
+  fill: none;
+  stroke: gainsboro;
+  stroke-width: var(--circle-border-width);
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+
+ 
+}
+
+.circle-container__progress1 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: var(--default-color);
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+  stroke-width: var(--circle-border-width);
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.stop1 {
+  stop-color:white;
+}
+
+.stop2 {
+  stop-color: white;
+}
+.circle-container {
+  width: var(--dot-diameter);
+  height: var(--dot-diameter);
+  transform: rotate(-225deg);
+  fill: none;
+  stroke:white;
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+}
+
+.circle-container__background {
+  fill: none;
+  stroke: var(--default-color);
+  stroke-width: var(--circle-border-width);
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+
+ 
+}
+
+.circle-container__progress {
+  fill: none;
+  stroke-linecap: round;
+  stroke:white;
+  stroke-dasharray: 75 100;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+.stop1 {
+  stop-color:white;
+}
+
+.stop2 {
+  stop-color: white;
+}
+.section{
+  
+  background-image: linear-gradient(to right, green, orange, red, red );
+   width: 500px;
+   height: 150px;
+}
+.dec{
+  position: absolute;
+  bottom: 10px;
+  list-style: none;
+}
+.comment{
+  font-size: 10px;
+}
+.cel{
+  border-bottom: none;
+  height: 50px;
+}
+.daesh{
+  text-align: end;
+  width: 103%;
+  background-color: white;
+}
+.Client{
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  width: 101%;
+}
+@media screen and (max-width: 1024px) {
+  #img{
+    display: none;
+  }
+  .daesh{
+    width: 130% !important;
+  }
+  .Fact{
+    width: 125% !important;
+  }
+  .Fact2{
+    width: 123% !important;
+  }
+  .COM{
+    width: 125% !important;
+  }
+  .COM2{
+    width: 124% !important;
+  }
+  .SUV{
+    width: 125% !important;
+  }
+  .SUV2{
+    width: 124% !important;
+  }
+  .DET{
+    width: 112% !important;
+  }
+  .DET2{
+    width: 110% !important;
+  }
+  .Client{
+    width: 102% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #img{
+    display: none;
+  }
+  .Side1{
+    width: 123%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .card1{
+    width: 50vw !important;
+    height: 25vh !important;
+  }
+.card2{
+  width: 50vw !important;
+  height: 25vh !important;
+}
+.Fact{
+  width: 104% !important;
+}
+.Fact2{
+  width: 100% !important;
+}
+.COM{
+  width: 104% !important;
+}
+.COM2{
+  width: 102% !important;
+}
+.SUV{
+  width: 104% !important;
+}
+.SUV2{
+  width: 102% !important;
+}
+.DET{
+  width: 104% !important;
+}
+.DET2{
+  width: 102% !important;
+}
+.Client{
+  width: 104% !important;
+}
+.Client2{
+  width: 96% !important;
+}
+.lab{
+  height: 90px;
+  width: 100%;
+}
+}
+@media screen and (max-width: 320px) {
+  .LG{
+    display: block;
+  }
+}

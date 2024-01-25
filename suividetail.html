@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: #D9EAF2;">
+        <div class="row ">
+            <div class="col-2 col-md-1 col-xl-2 px-sm-2 px-0 bg-white">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
+                    <a href="#"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class=""><img src="images/logo.png" width="100%" alt=""  id="img"></span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item">
+                            <a href="dashboard.html" class="nav-link align-middle px-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-grid" viewBox="0 0 16 16">
+                                    <path
+                                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+                                </svg> <span class="ms-1 d-none d-xl-inline d-md-none">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href=" 000112.html"  class="nav-link px-0 align-middle"></a>
+                               
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-pie-chart" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z" />
+                                </svg> <span class="ms-1 d-none d-xl-inline d-md-none">Facture</span> </a>
+                        </li>
+                        <li>
+                            <a href="command.html" class="nav-link px-0 align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z" />
+                                </svg> <span class="ms-1 d-none d-xl-inline d-md-none">Commande</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="suivi.html" style=" border-radius: 5px; text-decoration: none;" class="nav-link px-0 align-middle ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bag" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+                                </svg> <span class="ms-1 d-none d-xl-inline d-md-none">Suivi</span></a>
+                        </li>
+                        <li>
+                            <a href="serviceclient.html" class="nav-link px-0 align-middle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    <path
+                                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                </svg> <span class="ms-1 d-none d-xl-inline d-md-none">Service Client</span>
+                            </a>
+                        </li>
+                        <div class=" fixed-bottom px-3">
+                            <li class="flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+                                <a href="#" class="nav-link px-0 align-middle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-gear" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                                        <path
+                                            d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                                    </svg> <span class="ms-1 d-none d-xl-inline d-md-none">Parametre
+                                        Compte</span> </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="nav-link px-0 align-middle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0v-2z" />
+                                        <path fill-rule="evenodd"
+                                            d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                                    </svg> <span class="ms-1 d-none d-xl-inline d-md-none">Deconnexion</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-10">
+                <div class="DET" style="display: flex; justify-content: flex-end; background-color: white; width: 101;">
+                    <img src="images/icon1.jpeg" width="40px" alt="">
+                    <img src="images/icon2.jpeg" width="50px" alt="">
+                </div>
+                <h4 class="text-center" style="color: gray;">Rapport: R-TE202303001</h4>
+                <div class="bg-white p-4 DET2" style="border-radius: 12px;">
+                    <div class="bg-white mt-2 table-responsive" style="border-radius: 12px;">
+                        <img class="lab" src="images/109ed994-d013-4a61-9989-d028a31418a3.jpeg" width="20%" alt="">
+                        <h4 style="text-align: center; color: gray;">Rapport d'analyse (Moteur)</h4>
+                        <div class="overflow-auto">
+                            <table class=" table table-bordeless border border-1" style="height: 100%;">
+                                <tr>
+                                    <th class="py-0" colspan="4" style="background-color: #D9EAF2;">Information client</th>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Nom du client:</th>
+                                    <td class="py-0">BOLUDA</td>
+                                    <th class="py-0">Site du travail:</th>
+                                    <td class="py-0">ABIDJAN</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Nom du Navire:</th>
+                                    <td class="py-0">V8 SUPERENZO</td>
+                                    <th class="py-0">Compartiment:</th>
+                                    <td class="py-0">MOOTEUR PRINCIPAL BABORD</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Marque:</th>
+                                    <td class="py-0">CATERPILLAR</td>
+                                    <th class="py-0">Marque d'Huile:</th>
+                                    <td class="py-0">PREMIUM</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Numéro de série:</th>
+                                    <td class="py-0"></td>
+                                    <th class="py-0">Grade huile:</th>
+                                    <td class="py-0">20W50</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="overflow-auto">
+                            <table class="table table-bordeless border border-1" style="height: 100%;">
+                                <tr>
+                                    <th class="py-0" colspan="5" style="background-color: #D9EAF2;">Inforamtion
+                                        Echantillons</th>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Code échantillons:</th>
+                                    <td class="py-0">06-269-0030</td>
+                                    <td class="py-0">06-196-0014</td>
+                                    <td class="py-0">06-115-0016</td>
+                                    <td class="py-0">05-316-0020</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Date de prelevement:</th>
+                                    <td class="py-0">01/09/2022</td>
+                                    <td class="py-0">11/07/2022</td>
+                                    <td class="py-0">15/04/2022</td>
+                                    <td class="py-0">18/11/2021</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Date d'analyse:</th>
+                                    <td class="py-0">28/09/2022</td>
+                                    <td class="py-0">21/07/22</td>
+                                    <td class="py-0">25/04/22</td>
+                                    <td class="py-0">18/11/21</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Compte horaire H:</th>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Age huile H</th>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Vidange</th>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Appoint</th>
+                                    <td class="py-0">40</td>
+                                    <td class="py-0">29</td>
+                                    <td class="py-0">35,7</td>
+                                    <td class="py-0">127</td>
+                                </tr>
+                                <tr>
+                                    <th class="py-0">Filtre changé</th>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">-</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="overflow-auto">
+                            <table class="table table-bordeless border border-1" style="height: 100%;">
+                                <tr style="background-color:#D9EAF2;">
+                                    <th class="py-0">Parametre</th>
+                                    <th class="py-0">Méthode</th>
+                                    <th class="py-0">Unités</th>
+                                    <th class="py-0">Limites</th>
+                                    <th class="py-0" colspan="5">Résultats</th>
+                                </tr>
+                                <tr style="background-color: rgb(213, 210, 210);">
+                                    <th class="py-0" colspan="9">Metals/Wears/Contaminants/Additives/</th>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Aluminium</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0" style="border-right: solid 1px gainsboro;">ppm</td>
+                                    <td class="py-0" style="border-right: solid 1px gainsboro;">
+                                        <8/16<</td>
+                                    <td class="py-0" style="border-left: 3px;">1,6</td>
+                                    <td class="py-0">1</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">1,32</td>
+                                    </td>
+                                </tr style="text-align: center;">
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Chrome</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0" style="border-right: solid 1px gainsboro;">ppm</td>
+                                    <td class="py-0" style="border-right: solid 1px gainsboro;">
+                                        <5/25<</td>
+                                    <td class="py-0">0.2</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">O.22</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Cuivre</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0" style="border-right: solid 1px gainsboro;">ppm</td>
+                                    <td class="py-0" style="border-right: solid 1px gainsboro;">
+                                        <15/45<</td>
+                                    <td class="py-0" style="background-color:red;">178</td>
+                                    <td class="py-0" style="background-color:red;">204</td>
+                                    <td class="py-0" style="background-color:red;">141</td>
+                                    <td class="py-0" style="background-color:red;">288</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Etain</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0" style="border-right: solid 1px gainsboro;">
+                                        <15/30<</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0.28</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Fer</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <45/95<</td>
+                                    <td class="py-0">12.6</td>
+                                    <td class="py-0">13</td>
+                                    <td class="py-0">5.43</td>
+                                    <td class="py-0">1O.2</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Nickel</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <5/15<</td>
+                                    <td class="py-0">1.2</td>
+                                    <td class="py-0">1</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">O</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Chrome</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <25/80<</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">1</td>
+                                    <td class="py-0">0.80</td>
+                                    <td class="py-0">O.67</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Silicium</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <20/40<</td>
+                                    <td class="py-0">3.58</td>
+                                    <td class="py-0">3</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">2.38</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Titan</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <10</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">O</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Vadanium</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <5</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">O</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Argent</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <10</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">O</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Cadmium</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">
+                                        <10</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">O</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Sodium</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0" style="background-color:orange;">0</td>
+                                    <td class="py-0" style="background-color:orange;">0</td>
+                                    <td class="py-0" style="background-color:orange;">0</td>
+                                    <td class="py-0" style="background-color:red;">O</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Calcium</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">3577</td>
+                                    <td class="py-0">2895</td>
+                                    <td class="py-0">1158</td>
+                                    <td class="py-0">3220</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Magnesium</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">16.7</td>
+                                    <td class="py-0">18</td>
+                                    <td class="py-0">30.4</td>
+                                    <td class="py-0">162</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Phosphore</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">756</td>
+                                    <td class="py-0">713</td>
+                                    <td class="py-0">712</td>
+                                    <td class="py-0">727</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Zinc</td>
+                                    <td class="py-0">ASTM D5185</td>
+                                    <td class="py-0">ppm</td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0">808</td>
+                                    <td class="py-0">588</td>
+                                    <td class="py-0">596</td>
+                                    <td class="py-0">753</td>
+                                    </td>
+                                </tr>
+                                <tr style="background-color: rgb(213, 210, 210);">
+                                    <th colspan="9" class="py-0">Oil Condition/Particule Count</th>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Viscosité à 100°</td>
+                                    <td class="py-0">ASTM D445</td>
+                                    <td class="py-0">mm2/s</td>
+                                    <td class="py-0">
+                                        <12,5 /21<</td>
+                                    <td class="py-0" style="background-color:orange;">18.2</td>
+                                    <td class="py-0" style="background-color:orange;">18.1</td>
+                                    <td class="py-0" style="background-color:orange;">17.6</td>
+                                    <td class="py-0" style="background-color:red;">20.3</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">TBN</td>
+                                    <td class="py-0">ASTM D2896</td>
+                                    <td class="py-0">mgKOH/g</td>
+                                    <td class="py-0"></td>
+                                    <td class="py-0">5.96</td>
+                                    <td class="py-0">3.21</td>
+                                    <td class="py-0">4.47</td>
+                                    <td class="py-0">9</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Point éclair</td>
+                                    <td class="py-0">ASTM D3828</td>
+                                    <td class="py-0">°C</td>
+                                    <td class="py-0">>200</td>
+                                    <td class="py-0">220</td>
+                                    <td class="py-0" style="background-color: orange;">182</td>
+                                    <td class="py-0">218</td>
+                                    <td class="py-0">220</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Suie</td>
+                                    <td class="py-0">ASTM D2412</td>
+                                    <td class="py-0">ufm</td>
+                                    <td class="py-0">
+                                        <60< /td>
+                                    <td class="py-0">5.77</td>
+                                    <td class="py-0">15.1</td>
+                                    <td class="py-0">0</td>
+                                    <td class="py-0">16.4</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Eau</td>
+                                    <td class="py-0">crakle Test</td>
+                                    <td class="py-0">%</td>
+                                    <td class="py-0"></td>
+                                    <td class="py-0">N</td>
+                                    <td class="py-0">N</td>
+                                    <td class="py-0">N</td>
+                                    <td class="py-0">N</td>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center;">
+                                    <td class="py-0">Dilution</td>
+                                    <td class="py-0"></td>
+                                    <td class="py-0">-</td>
+                                    <td class="py-0"></td>
+                                    <td class="py-0">N</td>
+                                    <td class="py-0">N</td>
+                                    <td class="py-0">N</td>
+                                    <td class="py-0">N</td>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="">
+                           <div class="row">
+                            <div class="col-11 col-md-6" style=" background-image: linear-gradient(to right, green, orange, red, red ); height: 150px;">
+                                <p class="fs-1 fw-bold" style="text-align: end; margin-top: 3rem;">X</p>
+                            </div>
+                            <div class="col-10 col-md-6 comment">
+                                <th><strong>Commentaires:</strong></th>
+                                <p>Le taux de Cuivre reste très élevé. Le Sodium toujours aussi élevé: à suivre.
+                                    <br>
+                                    Vérifiez ce compartiment et réparez si nécessaire. Voir les causes de présence
+                                    de Sodium dans <br>
+                                    l'huile. Changé l'huile et le filtre. Réfaire un prélevement pour controle.
+                                </p>
+                                <br><br>
+                                <p>Diagnostic établie sous réserve de répresentativité de l'échantillons et des
+                                    informations fournies</p>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
